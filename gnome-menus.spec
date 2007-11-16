@@ -11,7 +11,7 @@ Source0: http://ftp.gnome.org/pub/GNOME/sources/%name/%{name}-%{version}.tar.bz2
 Patch0: gnome-menus-2.15.91-l10n.patch
 # (fc) 2.16.0-2mdv unclutter preferences/settings menu
 Patch1: gnome-menus-2.18.0-uncluttermenu.patch
-# (fc) 2.19.92-3mdv fix separator handling (Mdv bug #32867)
+# (fc) 2.19.92-3mdv fix separator handling (Mdv bug #32867) (GNOME bug #497399)
 Patch2: gnome-menus-2.19.92-fixseparator.patch
 License: GPL/LGPL
 Group: System/Libraries
