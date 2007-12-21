@@ -16,6 +16,7 @@ Patch2: gnome-menus-2.19.92-fixseparator.patch
 License: GPL/LGPL
 Group: System/Libraries
 Url: http://www.gnome.org
+BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-buildroot
 BuildRequires: glib2-devel >= 2.5.6
 BuildRequires: gamin-devel
 BuildRequires: perl-XML-Parser
