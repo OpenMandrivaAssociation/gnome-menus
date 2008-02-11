@@ -71,12 +71,16 @@ http://www.freedesktop.org/Standards/menu-spec
 %make
 
 %install
-rm -rf $RPM_BUILD_ROOT
+rm -rf $RPM_BUILD_ROOT %name.lang
 %makeinstall_std
+# gw these produce rpmlint errors:
+rm -rf %buildroot%_datadir/locale/{io,be@latin,bn_IN,si,uz@cyrillic}
 %find_lang %name
 
 mkdir -p $RPM_BUILD_ROOT%_sysconfdir/xdg/gnome
 mv $RPM_BUILD_ROOT%{_sysconfdir}/xdg/menus $RPM_BUILD_ROOT%{_sysconfdir}/xdg/gnome
+
+chmod 755 %buildroot%_libdir/python*/site-packages/GMenuSimpleEditor/*.py
 
 %clean
 rm -rf $RPM_BUILD_ROOT
