@@ -4,15 +4,13 @@
 
 Summary: GNOME menu library
 Name: gnome-menus
-Version: 2.22.1
+Version: 2.22.2
 Release: %mkrel 1
 Source0: http://ftp.gnome.org/pub/GNOME/sources/%name/%{name}-%{version}.tar.bz2
 # (fc) 2.15.91-2mdv grab translation from menu-messages if not in upstream file
 Patch0: gnome-menus-2.15.91-l10n.patch
 # (fc) 2.16.0-2mdv unclutter preferences/settings menu
-Patch1: gnome-menus-2.18.0-uncluttermenu.patch
-# (fc) 2.19.92-3mdv fix separator handling (Mdv bug #32867) (GNOME bug #497399)
-Patch2: gnome-menus-2.19.92-fixseparator.patch
+Patch1: gnome-menus-2.22.2-uncluttermenu.patch
 License: GPL/LGPL
 Group: System/Libraries
 Url: http://www.gnome.org
@@ -64,7 +62,6 @@ http://www.freedesktop.org/Standards/menu-spec
 %setup -q
 %patch0 -p1 -b .l10n
 %patch1 -p1 -b .uncluttermenu
-%patch2 -p1 -b .fixseparator
 
 %build
 %configure2_5x 
