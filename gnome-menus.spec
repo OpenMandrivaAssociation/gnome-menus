@@ -4,20 +4,20 @@
 
 Summary: GNOME menu library
 Name: gnome-menus
-Version: 2.22.2
+Version: 2.23.4
 Release: %mkrel 1
 Source0: http://ftp.gnome.org/pub/GNOME/sources/%name/%{name}-%{version}.tar.bz2
 # (fc) 2.15.91-2mdv grab translation from menu-messages if not in upstream file
 Patch0: gnome-menus-2.15.91-l10n.patch
 # (fc) 2.16.0-2mdv unclutter preferences/settings menu
-Patch1: gnome-menus-2.22.2-uncluttermenu.patch
+Patch1: gnome-menus-2.23.1-uncluttermenu.patch
 License: GPL/LGPL
 Group: System/Libraries
 Url: http://www.gnome.org
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-buildroot
 BuildRequires: glib2-devel >= 2.5.6
 BuildRequires: gamin-devel
-BuildRequires: perl-XML-Parser
+BuildRequires: intltool >= 0.40.0
 BuildRequires: libpython-devel
 Requires: python-%{name}
 
