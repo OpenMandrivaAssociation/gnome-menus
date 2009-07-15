@@ -4,11 +4,11 @@
 
 Summary: GNOME menu library
 Name: gnome-menus
-Version: 2.26.2
+Version: 2.27.4
 Release: %mkrel 1
 Source0: http://ftp.gnome.org/pub/GNOME/sources/%name/%{name}-%{version}.tar.bz2
 # (fc) 2.15.91-2mdv grab translation from menu-messages if not in upstream file
-Patch0: gnome-menus-2.15.91-l10n.patch
+Patch0: gnome-menus-2.27.4-l10n.patch
 # (fc) 2.16.0-2mdv unclutter preferences/settings menu
 Patch1: gnome-menus-2.23.1-uncluttermenu.patch
 Patch2: gnome-menus-2.26.2-linkage.patch
