@@ -21,6 +21,7 @@ BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-buildroot
 BuildRequires: glib2-devel >= 2.5.6
 BuildRequires: intltool >= 0.40.0
 BuildRequires: libpython-devel
+BuildRequires: gnome-common
 Requires: python-%{name}
 
 %description
