@@ -1,10 +1,11 @@
 %define major 2
 %define libname %mklibname gnome-menu %major
 %define libnamedev %mklibname -d gnome-menu
+%define api 2.0
 
 Summary: GNOME menu library
 Name: gnome-menus
-Version: 2.29.91
+Version: 2.29.92
 Release: %mkrel 1
 Source0: http://ftp.gnome.org/pub/GNOME/sources/%name/%{name}-%{version}.tar.bz2
 # (fc) 2.15.91-2mdv grab translation from menu-messages if not in upstream file
@@ -18,6 +19,7 @@ BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-buildroot
 BuildRequires: glib2-devel >= 2.5.6
 BuildRequires: intltool >= 0.40.0
 BuildRequires: libpython-devel
+BuildRequires: gobject-introspection-devel
 Requires: python-%{name}
 
 %description
@@ -106,6 +108,7 @@ rm -rf $RPM_BUILD_ROOT
 %files -n %libname
 %defattr(-,root,root)
 %_libdir/libgnome-menu.so.%{major}*
+%_libdir/girepository-1.0/GMenu-%api.typelib
 
 %files -n %libnamedev
 %defattr(-,root,root)
@@ -114,5 +117,5 @@ rm -rf $RPM_BUILD_ROOT
 %_libdir/lib*.a
 %_includedir/gnome-menus/
 %_libdir/pkgconfig/*.pc
-
+%_datadir/gir-1.0/GMenu-%api.gir
 
