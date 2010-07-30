@@ -6,7 +6,7 @@
 Summary: GNOME menu library
 Name: gnome-menus
 Version: 2.30.2
-Release: %mkrel 1
+Release: %mkrel 2
 Source0: http://ftp.gnome.org/pub/GNOME/sources/%name/%{name}-%{version}.tar.bz2
 # (fc) 2.15.91-2mdv grab translation from menu-messages if not in upstream file
 Patch0: gnome-menus-2.27.92-l10n.patch
@@ -18,7 +18,7 @@ Url: http://www.gnome.org
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-buildroot
 BuildRequires: glib2-devel >= 2.5.6
 BuildRequires: intltool >= 0.40.0
-BuildRequires: libpython-devel
+BuildRequires: python-devel
 BuildRequires: gobject-introspection-devel
 Requires: python-%{name}
 
