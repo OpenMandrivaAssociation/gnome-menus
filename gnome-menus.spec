@@ -5,8 +5,8 @@
 
 Summary: GNOME menu library
 Name: gnome-menus
-Version: 2.30.4
-Release: %mkrel 2
+Version: 2.30.5
+Release: %mkrel 1
 Source0: http://ftp.gnome.org/pub/GNOME/sources/%name/%{name}-%{version}.tar.bz2
 # (fc) 2.15.91-2mdv grab translation from menu-messages if not in upstream file
 Patch0: gnome-menus-2.27.92-l10n.patch
