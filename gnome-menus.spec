@@ -1,4 +1,4 @@
-%define major		0
+%define major	0
 %define api		3
 %define libname		%mklibname gnome-menu %{api} %{major}
 %define gi_name		%mklibname gmenu-gir %{api}.0
@@ -9,17 +9,17 @@
 Summary:	GNOME menu library
 Name:		gnome-menus
 Version:	3.2.0.1
-Release:	1
-Source0:	http://ftp.gnome.org/pub/GNOME/sources/%{name}/%{url_ver}/%{name}-%{version}.tar.xz
-# (fc) 2.16.0-2mdv unclutter preferences/settings menu
-Patch1:		gnome-menus-3.0.0-uncluttermenu.patch
+Release:	2
 License:	LGPLv2+
 Group:		System/Libraries
 Url:		http://www.gnome.org
+Source0:	http://ftp.gnome.org/pub/GNOME/sources/%{name}/%{url_ver}/%{name}-%{version}.tar.xz
+# (fc) 2.16.0-2mdv unclutter preferences/settings menu
+Patch1:		gnome-menus-3.0.0-uncluttermenu.patch
 BuildRequires:	intltool >= 0.40.0
 BuildRequires:	pkgconfig(gio-unix-2.0) >= 2.29.15
 BuildRequires:	pkgconfig(gobject-introspection-1.0)
-BuildRequires:	python-devel
+BuildRequires:	pkgconfig(python)
 
 Requires:	python-%{name}
 
@@ -34,7 +34,7 @@ Also contained here are the GNOME menu layout configuration files,
 %package -n python-%{name}
 Group:		Development/Python
 Summary:	Module to access XDG menu
-Requires:	python-gobject >= 2.28
+Requires:	python-gi
 
 %description -n python-%{name}
 Python module to access XDG menu.
@@ -77,7 +77,6 @@ This package contains the development libraries of %{name}.
 %make
 
 %install
-rm -rf %{buildroot} %name.lang
 %makeinstall_std
 
 find %{buildroot} -name *.la | xargs rm
