@@ -74,7 +74,7 @@ This package contains the development libraries of %{name}.
 %configure2_5x \
 	--disable-static
 
-%make
+%make LIBS='-lgmodule-2.0'
 
 %install
 %makeinstall_std
