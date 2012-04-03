@@ -9,7 +9,7 @@
 Summary:	GNOME menu library
 Name:		gnome-menus
 Version:	3.2.0.1
-Release:	2
+Release:	3
 License:	LGPLv2+
 Group:		System/Libraries
 Url:		http://www.gnome.org
@@ -22,6 +22,7 @@ BuildRequires:	pkgconfig(gobject-introspection-1.0)
 BuildRequires:	pkgconfig(python)
 
 Requires:	python-%{name}
+Obsoletes:	gnome-menus2
 
 %description
 The package contains an implementation of the draft "Desktop Menu
@@ -35,6 +36,7 @@ Also contained here are the GNOME menu layout configuration files,
 Group:		Development/Python
 Summary:	Module to access XDG menu
 Requires:	python-gi
+Obsoletes:	python-gnome-menus2
 
 %description -n python-%{name}
 Python module to access XDG menu.
@@ -60,7 +62,7 @@ Group:		Development/C
 Summary:	GNOME menu library development files
 Requires:	%{libname} = %{version}-%{release}
 Provides:	%{name}-devel = %{version}-%{release}
-Obsoletes:	%mklibname -d gnome-menu 2
+Obsoletes:	%{_lib}gnome-menu2-devel
 Conflicts:	gir-repository < 0.6.5-8
 
 %description -n %{develname}
