@@ -5,8 +5,6 @@
 %define girname		%mklibname gmenu-gir %{gir_major}
 %define develname	%mklibname -d gnome-menu
 
-%define url_ver %(echo %{version} | cut -d. -f1,2)
-
 Summary:	GNOME menu library
 Name:		gnome-menus
 Version:	3.4.0
@@ -14,7 +12,7 @@ Release:	1
 License:	LGPLv2+
 Group:		System/Libraries
 Url:		http://www.gnome.org
-Source0:	http://ftp.gnome.org/pub/GNOME/sources/%{name}/%{url_ver}/%{name}-%{version}.tar.xz
+Source0:	http://ftp.gnome.org/pub/GNOME/sources/%{name}/%{name}-%{version}.tar.xz
 # (fc) 2.16.0-2mdv unclutter preferences/settings menu
 Patch1:		gnome-menus-3.0.0-uncluttermenu.patch
 
