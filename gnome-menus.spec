@@ -7,7 +7,7 @@
 
 Summary:	GNOME menu library
 Name:		gnome-menus
-Version:	3.4.0
+Version:	3.4.2
 Release:	1
 License:	LGPLv2+
 Group:		System/Libraries
