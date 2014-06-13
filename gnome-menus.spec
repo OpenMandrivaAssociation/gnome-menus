@@ -10,7 +10,7 @@
 Summary:	GNOME menu library
 Name:		gnome-menus
 Version:	3.6.2
-Release:	5
+Release:	6
 License:	LGPLv2+
 Group:		System/Libraries
 Url:		http://www.gnome.org
