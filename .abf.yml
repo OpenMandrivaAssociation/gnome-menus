@@ -1,5 +1,2 @@
-removed_sources:
-  gnome-menus-3.6.2.tar.xz: 44f95bd7ed7b98be91b12e6dfa2ded679c3d9c34
 sources:
-  gnome-menus-3.13.3.tar.xz: 667e451d2a12395bf59606ecd4165df8143a76c6
-  gnome-menus-3.31.3.tar.xz: 0a07eb2af4d27af15e9f295bc3b794186230971d
+  gnome-menus-3.31.4.tar.xz: 25a0993049790352dcc9038b97c1138823ac6179
