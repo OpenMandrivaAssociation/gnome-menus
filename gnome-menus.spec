@@ -10,7 +10,7 @@
 
 Summary:	GNOME menu library
 Name:		gnome-menus
-Version:	3.31.3
+Version:	3.32.0
 Release:	1
 License:	LGPLv2+
 Group:		System/Libraries
@@ -69,12 +69,12 @@ This package contains the development libraries of %{name}.
 %install
 %makeinstall_std
 
-%find_lang %{name}-3.0
+%find_lang %{name}
 
 mkdir -p %{buildroot}%{_sysconfdir}/xdg/gnome
 mv %{buildroot}%{_sysconfdir}/xdg/menus %{buildroot}%{_sysconfdir}/xdg/gnome
 
-%files -f %{name}-3.0.lang
+%files -f %{name}.lang
 %doc README NEWS HACKING AUTHORS ChangeLog
 %{_datadir}/desktop-directories/*
 %dir %{_sysconfdir}/xdg/gnome
