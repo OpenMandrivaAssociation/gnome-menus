@@ -58,7 +58,7 @@ This package contains the development libraries of %{name}.
 
 %prep
 %setup -q
-%apply_patches
+%autopatch -p1
 
 %build
 %configure \
