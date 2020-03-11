@@ -10,7 +10,7 @@
 
 Summary:	GNOME menu library
 Name:		gnome-menus
-Version:	3.32.0
+Version:	3.36.0
 Release:	1
 License:	LGPLv2+
 Group:		System/Libraries
@@ -64,10 +64,10 @@ This package contains the development libraries of %{name}.
 %configure \
 	--disable-static
 
-%make LIBS='-lgmodule-2.0'
+%make_build LIBS='-lgmodule-2.0'
 
 %install
-%makeinstall_std
+%make_install
 
 %find_lang %{name}
 
