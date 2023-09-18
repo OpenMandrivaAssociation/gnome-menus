@@ -11,11 +11,11 @@
 Summary:	GNOME menu library
 Name:		gnome-menus
 Version:	3.36.0
-Release:	8
+Release:	9
 License:	LGPLv2+
 Group:		System/Libraries
-Url:		http://www.gnome.org
-Source0:	http://ftp.gnome.org/pub/GNOME/sources/%{name}/%{url_ver}/%{name}-%{version}.tar.xz
+Url:		https://www.gnome.org
+Source0:	https://ftp.gnome.org/pub/GNOME/sources/%{name}/%{url_ver}/%{name}-%{version}.tar.xz
 
 BuildRequires:	intltool
 BuildRequires:	pkgconfig(glib-2.0)
