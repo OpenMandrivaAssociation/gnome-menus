@@ -10,8 +10,8 @@
 
 Summary:	GNOME menu library
 Name:		gnome-menus
-Version:	3.36.0
-Release:	14
+Version:	3.38.1
+Release:	1
 License:	LGPLv2+
 Group:		System/Libraries
 Url:		https://www.gnome.org
@@ -57,8 +57,7 @@ Obsoletes:	%{_lib}gnome-menu2-devel < 3.4
 This package contains the development libraries of %{name}.
 
 %prep
-%setup -q
-%autopatch -p1
+%autosetup -p1
 
 %build
 %configure \
